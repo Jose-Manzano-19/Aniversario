@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #a855f7;
+    color: white;
+}
+
+/* Ocultar etapas */
+.hidden {
+    display: none;
+}
+
+/* Etapa 1 - Carta */
+.envelope {
+    width: 200px;
+    height: 120px;
+    margin: 150px auto 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 2px solid #6b21a8;
+    border-top: none;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.flap {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 60px solid #6b21a8;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    z-index: 2;
+    transform-origin: top;
+    transition: transform 1s;
+}
+
+.envelope.open .flap {
+    transform: rotateX(180deg);
+}
+
+.click-text {
+    font-size: 18px;
+}
+
+/* Etapa 2 - Texto */
+#loveText {
+    max-width: 600px;
+    margin: 200px auto;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+/* Etapa 3 - Fotos */
+#photoSlide {
+    max-width: 90%;
+    max-height: 80vh;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Etapa 4 - Corazones */
+.hearts-bg {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background: #ff4081;
+}
+
+.hearts-bg::before, .hearts-bg::after {
+    content: "💖 💕 💗 💓 💞";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    animation: float 10s infinite linear;
+}
+
+@keyframes float {
+    from { transform: translateY(100%); }
+    to { transform: translateY(-100%); }
+}
+
+.stage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
