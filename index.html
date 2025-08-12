@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversario 💜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Etapa 1: Carta cerrada -->
+    <div id="stage1" class="stage">
+        <div class="envelope" onclick="openEnvelope()">
+            <div class="flap"></div>
+            <div class="body"></div>
+        </div>
+        <p class="click-text">Haz clic para abrir 💌</p>
+    </div>
+
+    <!-- Etapa 2: Texto romántico -->
+    <div id="stage2" class="stage hidden">
+        <p id="loveText"></p>
+    </div>
+
+    <!-- Etapa 3: Galería de fotos -->
+    <div id="stage3" class="stage hidden">
+        <img id="photoSlide" src="img/foto1.jpg" alt="Foto romántica">
+    </div>
+
+    <!-- Etapa 4: Mensaje final -->
+    <div id="stage4" class="stage hidden hearts-bg">
+        <h1>💖 Feliz Aniversario de 1 Año 💖</h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
