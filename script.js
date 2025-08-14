@@ -1,7 +1,7 @@
 // Configuración de tiempos (en milisegundos)
 const textoDuracion = 5000; // 5 segundos para el texto
 const fotosDuracion = 3000; // 3 segundos cada foto
-const fotos = ["img/foto1.jpg", "img/foto2.jpg", "img/foto3.jpg"];
+const fotos = ["img/foto1.jpg", "img/foto2.jpg"];
 
 // Etapa 1 -> Abrir carta
 function openEnvelope() {
