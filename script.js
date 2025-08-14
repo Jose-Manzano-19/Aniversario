@@ -15,7 +15,7 @@ function openEnvelope() {
 // Etapa 2 -> Texto romántico
 function mostrarTexto() {
     document.getElementById("stage2").classList.remove("hidden");
-    const texto = "Aquí va tu mensaje romántico 💜\nLo escribes tú mismo.";
+    const texto = "Un año juntos, y cada día te amo un poquito más. 💖";
     let i = 0;
     const loveTextEl = document.getElementById("loveText");
 
